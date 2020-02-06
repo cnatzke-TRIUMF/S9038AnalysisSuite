@@ -89,6 +89,7 @@ void TwoPhotonGriffinAnglePlotsSelector::CreateHistograms() {
    //Angle Histograms
    fH2["addbackAngDiff_Supp_1022"] = new TH2D("AB_AngDiff_Supp_1022","#gamma1 Energy vs. Ang Diff", 18, 0, 180, gamma_bin/8, gamma_min, gamma_max/4);
    fH2["addbackAngDiff_Supp_1140"] = new TH2D("AB_AngDiff_Supp_1140","#gamma1 Energy vs. Ang Diff", 18, 0, 180, gamma_bin/8, gamma_min, gamma_max/4);
+   fH2["addbackAngDiff_Supp_1332"] = new TH2D("AB_AngDiff_Supp_1332","#gamma1 Energy vs. Ang Diff", 18, 0, 180, gamma_bin/8, gamma_min, gamma_max/2);
    fH2["addbackAngDiff_Supp_1461"] = new TH2D("AB_AngDiff_Supp_1461","#gamma1 Energy vs. Ang Diff", 18, 0, 180, gamma_bin/8, gamma_min, gamma_max/4);
    fH2["addbackAngDiff_Supp_1750"] = new TH2D("AB_AngDiff_Supp_1750","#gamma1 Energy vs. Ang Diff", 18, 0, 180, gamma_bin/8, gamma_min, gamma_max/4);
    fH2["addbackAngDiff_Supp_1760"] = new TH2D("AB_AngDiff_Supp_1760","#gamma1 Energy vs. Ang Diff", 18, 0, 180, gamma_bin/8, gamma_min, gamma_max/4);
@@ -194,6 +195,11 @@ void TwoPhotonGriffinAnglePlotsSelector::FillHistograms() {
                if (EnergyGate(grif1, grif2, 1140)){
                   fH2.at("addbackAngDiff_Supp_1140")->Fill(grif1->GetPosition().Angle(grif2->GetPosition()) * 180. / TMath::Pi(), grif1->GetEnergy());
                   fH2.at("addbackAngDiff_Supp_1140")->Fill(grif1->GetPosition().Angle(grif2->GetPosition()) * 180. / TMath::Pi(), grif2->GetEnergy());
+               }
+
+               if (EnergyGate(grif1, grif2, 1332)){
+                  fH2.at("addbackAngDiff_Supp_1332")->Fill(grif1->GetPosition().Angle(grif2->GetPosition()) * 180. / TMath::Pi(), grif1->GetEnergy());
+                  fH2.at("addbackAngDiff_Supp_1332")->Fill(grif1->GetPosition().Angle(grif2->GetPosition()) * 180. / TMath::Pi(), grif2->GetEnergy());
                }
 
                if (EnergyGate(grif1, grif2, 1461)){
