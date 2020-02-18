@@ -6,8 +6,8 @@ CFILE=/tig/belodon_data4/S9038/S1367Cal.cal # Calibration File
 
 DLEN=${#DATADIR}
 
-m=15740 # Only Sort after this run
-last_run=15868
+m=15681 # Only Sort after this run
+last_run=15902
 
 # hack to find grsisort 
 #PATH=/home/S9038/packages/GRSISort/bin:/opt/root/bin:/opt/bin:/usr/local/texlive/2015/bin/x86_64-linux:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/S9038/bin

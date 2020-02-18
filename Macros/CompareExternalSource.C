@@ -8,7 +8,7 @@
 #include "TFile.h"
 
 // list of files to be read in 
-ifstream fin("/data4/S9038/externalSourceList.txt");
+ifstream fin("/data4/S9038/Utils/externalSourceList.txt");
 
 void CompareExternalSource(){
    
