@@ -6,8 +6,8 @@
 // (e.g. /data4/S9038)
 //
 // Author:        Connor Natzke (cnatzke@triumf.ca)
-// Creation Date: __date__
-// Last Update:   __date__
+// Creation Date: Mon 24 Feb 2020 02:07:23 PM PST
+// Last Update:   Mon 24 Feb 2020 02:07:27 PM PST
 // Usage:         .x UpdateCalibration.C(run1, run2, calFile)
 //
 //////////////////////////////////////////////////////////////////////////////////

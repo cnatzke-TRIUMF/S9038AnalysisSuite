@@ -2,7 +2,7 @@
 DATADIR=/tig/grifstore0b/griffin/90Sr-source # File Path of Midas Files
 FRAGDIR=/tig/belodon_data4/S9038/FragmentTrees # Directory to store Fragment Trees
 ANALDIR=/tig/belodon_data4/S9038/AnalysisTrees # Directory to store Analysis Trees
-CFILE=/tig/belodon_data4/S9038/S1367Cal.cal # Calibration File
+CFILE=/tig/belodon_data4/S9038/PostSrcCal.cal # Calibration File
 
 DLEN=${#DATADIR}
 
